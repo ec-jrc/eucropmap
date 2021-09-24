@@ -9,6 +9,9 @@ by Raphaël d'Andrimont, Astrid Verhegghen, Guido Lemoine, Pieter Kempeneers, Mi
  
  `2_Polygons_extract_GEE_reorganize_v7_S1`: Create a single .csv file with the S1 VV, VH and CR time series extracted for the LUCAS Copernicus polygons
 
+  `AgregateS1timeSeries.R` : aggregate the S1 VV, VH from `S1_point_allV7_10days_10m_1Jan-31Dec_EU_ratio-db.csv` per group and compute statistic to prepare FIG 3 and FIG S7.
+  
+  
 ### Sentinel-1
  `GEE_S1_compositing.js` : creation of the 10-days VV and VH composite with Google Earth Engine
 
