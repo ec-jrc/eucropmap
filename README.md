@@ -10,12 +10,13 @@ by Raphaël d'Andrimont, Astrid Verhegghen, Guido Lemoine, Pieter Kempeneers, Mi
 ### Sentinel-1
 
 ### LUCAS
-Creation of validation point
+
+`CreateLUCAS2018validationPoints.R` : Creation of LUCAS validation point
 
 
 ## Accuracy 
 
-Validation from the LUCAS data
+`ValidationClassifLucasPoints.R` Validation from the LUCAS data (computing of FSCORE at the country level)
 
 Validation by comparing with farm declaration
 
