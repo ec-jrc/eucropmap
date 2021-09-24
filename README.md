@@ -10,6 +10,9 @@ by Raphaël d'Andrimont, Astrid Verhegghen, Guido Lemoine, Pieter Kempeneers, Mi
 ### Sentinel-1
 'GEE_S1_compositing.js' : creation of the 10-days VV and VH composite with Google Earth Engine
 
+### Post-processing
+'maskeucropmap.py' : masking the EU crop map with the AW30D3, JRC GHSL European Settlement map 2015, JRC Global Water Surface product, Corine Land Cover 2018 and reprojecting to ETRS89-LAEA
+
 ### LUCAS
 
 `CreateLUCAS2018validationPoints.R` : Creation of LUCAS validation point
