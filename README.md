@@ -6,8 +6,12 @@ by Raphaël d'Andrimont, Astrid Verhegghen, Guido Lemoine, Pieter Kempeneers, Mi
 
 ## Pre-processing
  `1_Legend_polygons_COPERNICUS_reorganise_v7` : Reclassify the Copernicus LUCAS polygons to match the EU crop map legend
+ 
  `2_Polygons_extract_GEE_reorganize_v7_S1`: Create a single .csv file with the S1 VV, VH and CR time series extracted for the LUCAS Copernicus polygons
 
+  `AgregateS1timeSeries.R` : aggregate the S1 VV, VH from `S1_point_allV7_10days_10m_1Jan-31Dec_EU_ratio-db.csv` per group and compute statistic to prepare FIG 3 and FIG S7.
+  
+  
 ### Sentinel-1
  `GEE_S1_compositing.js` : creation of the 10-days VV and VH composite with Google Earth Engine
  `GEE_S1_polygons_extraction.js` : extraction of 10-days VV, VH and VH/VV time series for the Copernicus polygons (for feature selection)
@@ -22,11 +26,14 @@ by Raphaël d'Andrimont, Astrid Verhegghen, Guido Lemoine, Pieter Kempeneers, Mi
 
 ## Accuracy 
 
-`ValidationClassifLucasPoints.R` Validation from the LUCAS data (computing of FSCORE at the country level)
+`Validation_1_ClassifLucasPoints.R` : Validation from the LUCAS data (computing of FSCORE at the country level)
 
-Validation by comparing with farm declaration
+`Validation_2_GSAA.R` : Validation by comparing with farm declaration
 
-`extractStatisticsNUTS2.R` Validation by comparing Eurostat statistics
+`Validation_3_StatisticsNUTS2.R` : Validation by comparing Eurostat statistics
+
+
+
 
 ## Generate the figures of the paper
 
