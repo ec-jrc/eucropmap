@@ -26,7 +26,9 @@ by Raphaël d'Andrimont, Astrid Verhegghen, Guido Lemoine, Pieter Kempeneers, Mi
 ## Accuracy 
 
 `Validation_1_ClassifLucasPoints.R` : Validation from the LUCAS data (computing of FSCORE at the country level)
+
 `Validation_2_GSAA.R` : Validation by comparing with farm declaration
+
 `Validation_3_StatisticsNUTS2.R` : Validation by comparing Eurostat statistics
 
 
