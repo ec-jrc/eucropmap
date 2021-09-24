@@ -6,6 +6,7 @@ by Raphaël d'Andrimont, Astrid Verhegghen, Guido Lemoine, Pieter Kempeneers, Mi
 
 ## Pre-processing
  `1_Legend_polygons_COPERNICUS_reorganise_v7` : Reclassify the Copernicus LUCAS polygons to match the EU crop map legend
+ 
  `2_Polygons_extract_GEE_reorganize_v7_S1`: Create a single .csv file with the S1 VV, VH and CR time series extracted for the LUCAS Copernicus polygons
 
 ### Sentinel-1
