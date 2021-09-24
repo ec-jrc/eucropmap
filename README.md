@@ -23,4 +23,4 @@ Validation by comparing Eurostat statistics
 
 ## Generate the figures of the paper
 
-The code to generate  FIG 3, 4, 5, 8 , 9 and  10 ; Supp Fig S1, S5, S6, S7
+ `eucropmap_figures_manuscript.R` to generate  FIG 3, 4, 5, 8 , 9 and  10 ; Supp Fig S1, S5, S6, S7
