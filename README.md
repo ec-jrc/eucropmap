@@ -8,10 +8,10 @@ by Raphaël d'Andrimont, Astrid Verhegghen, Guido Lemoine, Pieter Kempeneers, Mi
 ## Pre-processing
 
 ### Sentinel-1
-'GEE_S1_compositing.js' : creation of the 10-days VV and VH composite with Google Earth Engine
+ `GEE_S1_compositing.js` : creation of the 10-days VV and VH composite with Google Earth Engine
 
 ### Post-processing
-'maskeucropmap.py' : masking the EU crop map with the AW30D3, JRC GHSL European Settlement map 2015, JRC Global Water Surface product, Corine Land Cover 2018 and reprojecting to ETRS89-LAEA
+`maskeucropmap.py`: masking the EU crop map with the AW30D3, JRC GHSL European Settlement map 2015, JRC Global Water Surface product, Corine Land Cover 2018 and reprojecting to ETRS89-LAEA
 
 ### LUCAS
 
@@ -24,7 +24,7 @@ by Raphaël d'Andrimont, Astrid Verhegghen, Guido Lemoine, Pieter Kempeneers, Mi
 
 Validation by comparing with farm declaration
 
-Validation by comparing Eurostat statistics
+`extractStatisticsNUTS2.R` Validation by comparing Eurostat statistics
 
 ## Generate the figures of the paper
 
