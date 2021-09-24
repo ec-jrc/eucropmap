@@ -8,6 +8,7 @@ by Raphaël d'Andrimont, Astrid Verhegghen, Guido Lemoine, Pieter Kempeneers, Mi
 ## Pre-processing
 
 ### Sentinel-1
+'GEE_S1_compositing.js' : creation of the 10-days VV and VH composite with Google Earth Engine
 
 ### LUCAS
 
