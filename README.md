@@ -1,4 +1,4 @@
-This work is in progress and may be subject to frequent changes
+This work is in progress and may be subject to changes
 
 # eucropmap
 
