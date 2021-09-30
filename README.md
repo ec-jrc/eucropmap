@@ -1,3 +1,5 @@
+This work is in progress and may be subject to frequent changes
+
 # eucropmap
 
 This repository contains the code developped for the paper:
