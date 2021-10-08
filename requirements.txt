@@ -9,3 +9,9 @@ pyjeo
 scipy
 argparse
 pathlib
+datetime
+pickle
+os
+osgeo
+sys
+glob
