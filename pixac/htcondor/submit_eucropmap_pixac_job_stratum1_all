@@ -1,0 +1,29 @@
+#Universe must be docker
+universe       = docker
+#Docker image are pulled from the JEODPP registry
+docker_image   = jeoreg.cidsn.jrc.it:5000/jeodpp-htcondor/refocus_py:0.1 
+#We strongly suggest to start the workflow with bash script
+executable     = start_process_pixac_all.sh
+
+#arguments of the workflow script
+arguments = $(Cluster) $(Process) $(task)
+
+#We suggest to transfer the workflow script and aux-files to the container instead to read directly from EOS
+transfer_input_files = /eos/jeodpp/data/projects/REFOCUS/data/S1_GS/v7/pixaccuracy/pixac/htcondor/task_arguments_str1.txt, /eos/jeodpp/data/projects/REFOCUS/data/S1_GS/v7/pixaccuracy/pixac/htcondor/start_process_pixac_all.sh, /eos/jeodpp/data/projects/REFOCUS/data/S1_GS/v7/pixaccuracy/pixac/run_eucropmap_all_htc.py
+should_transfer_files   = YES
+when_to_transfer_output = ON_EXIT
+
+#Resources required by the application
+request_cpus   = 1
+request_memory = 200GB
+
+#Location of the *.log must be in /eos/jeodpp/htcondor/processing_logs/[USE-CASE]
+output         = /eos/jeodpp/data/projects/REFOCUS/data/S1_GS/v7/pixaccuracy/pixac/htcondor/logs/pixaclassif.$(ClusterId).$(ProcId).out 
+error          = /eos/jeodpp/data/projects/REFOCUS/data/S1_GS/v7/pixaccuracy/pixac/htcondor/logs/pixaclassif.$(ClusterId).$(ProcId).err 
+log            = /eos/jeodpp/data/projects/REFOCUS/data/S1_GS/v7/pixaccuracy/pixac/htcondor/logs/pixaclassif.$(ClusterId).$(ProcId).log
+
+#Tag for the job in the queue
+batch_name = "pixac_str1"
+
+#Cmd to submit
+queue task from task_arguments_str1.txt

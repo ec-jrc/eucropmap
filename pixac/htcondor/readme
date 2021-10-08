@@ -1,0 +1,31 @@
+Instructions to submit on HTCondor:
+"Pixel Accuracy method on the version 7 of the Eucropmap"
+
+code repository: https://github.com/waldnerf/pixac
+user for HTCondor: refocusproc
+docker_image   = jeoreg.cidsn.jrc.it:5000/jeodpp-htcondor/refocus_py:0.1 
+
+1. Create a folder for classification output
+
+cd /eos/jeodpp/data/projects/REFOCUS/data/S1_GS
+mkdir pixac_v7_stratum_1
+mkdir pixac_v7_stratum_2
+
+2. Modify the bash submission files
+
+cd /eos/jeodpp/home/users/verheas/pixac/htcondor/
+
+create a task_argument text file with the 5 arguments for each stratum:
+
+Column 1 Input tiles : list of S1 images
+Column 2 Folder with the map classif tiles : to link the classification results with the input file
+Column 3 Output folder : where to store the pixel accuracy
+Column 4 Folder for the model : where to store/find the model
+Column 5 Csv file with S1 extract and validation
+Column 6 Stratum number
+
+3. Launch the jobs with htcondor
+
+cd /eos/jeodpp/home/users/verheas/pixac/htcondor/ or other folder
+
+sudo -u refocusproc condor_submit submit_eucropmap_pixac_job_stratum1_all.sh

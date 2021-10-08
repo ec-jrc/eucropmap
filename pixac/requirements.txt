@@ -1,0 +1,7 @@
+numpy
+pandas
+rasterio
+scikit-learn==0.23.2
+scikit-optimize
+pathos
+matplotlib
