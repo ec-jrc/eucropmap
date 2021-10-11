@@ -23,6 +23,7 @@ by Raphaël d'Andrimont, Astrid Verhegghen, Guido Lemoine, Pieter Kempeneers, Mi
 Parametrization of the four RF models 
 #### Classification at scale
 classification at scale
+
 `eucropmap-classif-strata-v7.R`: The creation of a single geotiff from the different tiles and strata
 
 ### Post-processing
@@ -41,14 +42,15 @@ classification at scale
 
 `Validation_3_StatisticsNUTS2.R` : Validation by comparing Eurostat statistics
 
-## Accuracy - pixac
 
-Spatial accuracy assessment presented at IGARSS 2021
-
-Verhegghen, A., D’Andrimont, R., Waldner, F., & Van der Velde, M. (2021). Accuracy assessment of the first EU-wide crop type map with LUCAS data. IEEE International Geoscience and Remote Sensing Symposium (IGARSS), 2021.
 
 ## Generate the figures of the paper
 
  `eucropmap_figures_tables_manuscript.R` to generate  FIG 3, 4, 5, 8 , 9 and  10 ; Supp Fig S1, S5, S6, S7
  
- 
+
+## Accuracy - pixac
+
+Spatial accuracy assessment presented at IGARSS 2021
+
+Verhegghen, A., D’Andrimont, R., Waldner, F., & Van der Velde, M. (2021). Accuracy assessment of the first EU-wide crop type map with LUCAS data. IEEE International Geoscience and Remote Sensing Symposium (IGARSS), 2021.
